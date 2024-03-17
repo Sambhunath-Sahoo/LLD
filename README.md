@@ -1,6 +1,4 @@
-# Project Name
-
-Python Low-Level Design (LLD) Patterns
+# Low-Level Design (LLD) - Python
 
 ## Description
 
