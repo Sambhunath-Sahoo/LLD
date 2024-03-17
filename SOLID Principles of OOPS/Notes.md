@@ -8,6 +8,8 @@ The SOLID principles are a set of design principles that help in creating mainta
 - I - Interface Segregation Principle
 - D - Dependency Inversion Principle
 
+The SOLID principles improve software quality by promoting maintainability, scalability, testability, flexibility, reusability, reduced coupling, and higher overall code quality.
+
 ### Single Responsibility Principle (SRP): 
 This principle states that a class should have only one reason to change. It means that a **class should have only one responsibility or job**. This principle helps in keeping classes focused and promotes better code organization.
 
@@ -105,7 +107,7 @@ class Ostrich(FlightlessBird):
 ```
 
 ### Interface Segregation Principle (ISP): 
-This principle suggests that clients should not be forced to depend on interfaces they do not use. This means that a class should not have to implement methods it doesn't need.
+This principle suggests that clients should not be forced to depend on interfaces they do not use. This means that a **class should not have to implement methods it doesn't need**.
 
 - Bad example
 ```python
@@ -131,7 +133,7 @@ class Worker(Workable, Eatable):
 ```
 
 ### Dependency Inversion Principle (DIP): 
-This principle states that high-level modules should not depend on low-level modules. Both should depend on abstractions. Also, abstractions should not depend on details. Details should depend on abstractions.
+This principle states that high-level modules should not depend on low-level modules. Both should depend on abstractions. Also, **abstractions should not depend on details. Details should depend on abstractions**.
 
 - Bad example
 ```python
