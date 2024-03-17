@@ -9,7 +9,7 @@ The SOLID principles are a set of design principles that help in creating mainta
 - D - Dependency Inversion Principle
 
 ### Single Responsibility Principle (SRP): 
-This principle states that a class should have only one reason to change. It means that a **class should have only one responsibility or job**. This principle helps in keeping classes focused and promotes better code organization.
+> This principle states that a class should have only one reason to change. It means that a **class should have only one responsibility or job**. This principle helps in keeping classes focused and promotes better code organization.
 
 
 Example: 
@@ -44,7 +44,7 @@ class UserDB:
 ```
 
 ### Open-Closed Principle (OCP): 
-According to this principle, software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification. This means that **you should be able to add new functionality without changing the existing code**.
+> According to this principle, software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification. This means that **you should be able to add new functionality without changing the existing code**.
 
 - Bad example
 ```python
@@ -78,7 +78,7 @@ class AreaCalculator:
 ```
 
 ### Liskov Substitution Principle (LSP): 
-This principle states that if a program is using a base class, it should be able to use any of its subclasses without the program knowing it. In other words, the ***subclasses should be substitutable for their base class***.
+> This principle states that if a program is using a base class, it should be able to use any of its subclasses without the program knowing it. In other words, the ***subclasses should be substitutable for their base class***.
 
 - Bad example
 ```python
@@ -105,7 +105,7 @@ class Ostrich(FlightlessBird):
 ```
 
 ### Interface Segregation Principle (ISP): 
-This principle suggests that clients should not be forced to depend on interfaces they do not use. This means that a class should not have to implement methods it doesn't need.
+> This principle suggests that clients should not be forced to depend on interfaces they do not use. This means that a class should not have to implement methods it doesn't need.
 
 - Bad example
 ```python
@@ -131,7 +131,7 @@ class Worker(Workable, Eatable):
 ```
 
 ### Dependency Inversion Principle (DIP): 
-This principle states that high-level modules should not depend on low-level modules. Both should depend on abstractions. Also, abstractions should not depend on details. Details should depend on abstractions.
+> This principle states that high-level modules should not depend on low-level modules. Both should depend on abstractions. Also, abstractions should not depend on details. Details should depend on abstractions.
 
 - Bad example
 ```python
