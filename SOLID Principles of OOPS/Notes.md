@@ -2,11 +2,11 @@
 
 The SOLID principles are a set of design principles that help in creating maintainable and scalable object-oriented code. These principles provide guidelines for writing code that is easy to understand, test, and maintain.
 
-S - Single Responsibility Principle
-O - Open/Closed Principle
-L - Liskov Substitution Principle
-I - Interface Segregation Principle
-D - Dependency Inversion Principle
+- S - Single Responsibility Principle 
+- O - Open/Closed Principle
+- L - Liskov Substitution Principle
+- I - Interface Segregation Principle
+- D - Dependency Inversion Principle
 
 ### Single Responsibility Principle (SRP): 
 This principle states that a class should have only one reason to change. It means that a **class should have only one responsibility or job**. This principle helps in keeping classes focused and promotes better code organization.
