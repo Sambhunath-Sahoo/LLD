@@ -46,14 +46,14 @@ Design patterns are typical solutions to commonly occurring problems in software
 7. Proxy Pattern
 
 ### 🎭 Behavioral Patterns:
-1. Strategy Pattern
-2. Chain of Responsibility Pattern
-3. Command Pattern
-4. Interpreter Pattern
-5. Iterator Pattern
-6. Mediator Pattern
-7. Memento Pattern
-8. Observer Pattern
+1. [Strategy Pattern](https://github.com/Sambhunath-Sahoo/Low-Level-System-Design/tree/master/Behavioral%20Patterns/1.%20Strategy%20Pattern)
+2. [Observer Pattern](https://github.com/Sambhunath-Sahoo/Low-Level-System-Design/tree/master/Behavioral%20Patterns/2.%20Observer%20pattern)
+3. Chain of Responsibility Pattern
+4. Command Pattern
+5. Interpreter Pattern
+6. Iterator Pattern
+7. Mediator Pattern
+8. Memento Pattern
 9. State Pattern
 10. Template Method Pattern
 11. Visitor Pattern
