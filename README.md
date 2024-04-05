@@ -1,10 +1,10 @@
-# 🛠️ Low-Level Design (LLD) - Python 🐍
+# 🛠️ Low-Level Design (LLD)
 
 ## 📝 Description
 
 > "Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs
 
-This repository contains Python implementations of various low-level design patterns. It serves as a resource for understanding and learning about different design patterns and how they can be implemented in Python. 📘💡
+This repository contains implementations of various low-level design patterns. It serves as a resource for understanding and learning about different design patterns and how they can be implemented in Python/Java. 📘💡
 
 # 🏗️ SOLID Principles
 
