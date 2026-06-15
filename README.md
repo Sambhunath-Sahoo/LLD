@@ -1,61 +1,96 @@
-# 🛠️ Low-Level Design (LLD)
+# Low-Level Design (LLD)
 
-## 📝 Description
+Interview prep repo for design patterns, SOLID, and machine-coding problems — structured to match the design-pattern cheat sheet.
 
-> "Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs
+## How to use
 
-This repository contains implementations of various low-level design patterns. It serves as a resource for understanding and learning about different design patterns and how they can be implemented in Python/Java. 📘💡
+1. Read `00-foundations/` once, then revisit before mocks.
+2. For each pattern in `01-patterns/`, read the README, run the code, rewrite it from memory.
+3. Code at least 3 problems in `02-machine-coding/` fully (Parking Lot, one state-machine problem, one Strategy-heavy problem).
+4. Drill `03-interview-qa/` the night before.
+5. Run through `04-revision/last-20-min-checklist.md` on interview day.
 
-# 🏗️ SOLID Principles
+## Structure
 
-The SOLID principles are a set of five design principles that help developers create more maintainable and scalable software. They are the building blocks 🧱 of any robust, readable, and maintainable codebase.
+```
+├── 00-foundations/     # OOP pillars, SOLID, RecruitCRM example
+├── 01-patterns/        # All 23 patterns + memory map & trigger tables
+├── 02-machine-coding/  # Parking lot, elevator, splitwise, …
+├── 03-interview-qa/    # Drills, SOLID violations, follow-ups
+├── 04-revision/        # Last-minute checklist
+└── resources/          # Boss sheet PDF
+```
 
-- **S - Single Responsibility Principle (SRP):** 🎯
-  - A class should have only one reason to change, meaning it should only have one responsibility.
-- **O - Open-Closed Principle (OCP):** 🔐
-  - Software entities should be open for extension but closed for modification, meaning new functionality can be added without changing existing code.
-- **L - Liskov Substitution Principle (LSP):** 🔁
-  - Subtypes should be substitutable for their base types without altering the correctness of the program.
-- **I - Interface Segregation Principle (ISP):** 🚦
-  - Clients should not be forced to depend on interfaces they do not use, and interfaces should be specific to clients' needs.
-- **D - Dependency Inversion Principle (DIP):** ⬆️⬇️
-  - High-level modules should not depend on low-level modules; both should depend on abstractions. Abstractions should not depend on details; details should depend on abstractions.
+## Study log
 
-[Learn more about SOLID principles](https://en.wikipedia.org/wiki/SOLID)
+Check off when you've written the code yourself (not just read it).
 
-# 🧩 Design Patterns
+### Foundations
+- [ ] OOP pillars — `00-foundations/oop-pillars.md`
+- [ ] SOLID — `00-foundations/solid-principles.md`
+- [ ] RecruitCRM example — `00-foundations/examples/recruit-crm/`
 
-> "Design patterns are the bee's knees of our industry." - Addy Osmani
+### Creational patterns
+- [ ] Singleton
+- [x] Factory — started 2026-06-15
+- [ ] Builder
+- [ ] Abstract Factory (recognize only)
+- [ ] Prototype
 
-Design patterns are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code. 📜🖌️
+### Structural patterns
+- [ ] Adapter
+- [ ] Decorator
+- [ ] Facade
+- [ ] Proxy
+- [ ] Bridge
+- [ ] Composite
+- [ ] Flyweight
 
-### 🏭 Creational Patterns:
-1. Factory Method Pattern
-2. Abstract Factory Pattern
-3. Singleton Pattern
-4. Builder Pattern
-5. Prototype Pattern
+### Behavioral patterns
+- [ ] Strategy
+- [ ] Observer
+- [ ] State
+- [ ] Command
+- [ ] Template Method
+- [ ] Chain of Responsibility
+- [ ] Iterator
+- [ ] Mediator
+- [ ] Memento
+- [ ] Visitor
+- [ ] Interpreter
 
-### 🌉 Structural Patterns:
-1. Adapter Pattern
-2. Bridge Pattern
-3. Composite Pattern
-4. Decorator Pattern
-5. Facade Pattern
-6. Flyweight Pattern
-7. Proxy Pattern
+### Machine coding
+- [ ] Parking Lot
+- [ ] Elevator System
+- [ ] Splitwise
+- [ ] Vending Machine
+- [ ] Movie Booking
+- [ ] Logging Framework
+- [ ] Tic Tac Toe
+- [ ] Snake and Ladder
+- [ ] Library Management
+- [ ] Rate Limiter
 
-### 🎭 Behavioral Patterns:
-1. [Strategy Pattern](https://github.com/Sambhunath-Sahoo/Low-Level-System-Design/tree/master/Behavioral%20Patterns/1.%20Strategy%20Pattern)
-2. [Observer Pattern](https://github.com/Sambhunath-Sahoo/Low-Level-System-Design/tree/master/Behavioral%20Patterns/2.%20Observer%20pattern)
-3. Chain of Responsibility Pattern
-4. Command Pattern
-5. Interpreter Pattern
-6. Iterator Pattern
-7. Mediator Pattern
-8. Memento Pattern
-9. State Pattern
-10. Template Method Pattern
-11. Visitor Pattern
+## Quick links
 
-[Learn more about Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
+| Resource | Path |
+|----------|------|
+| Pattern memory map | [01-patterns/_memory-map.md](01-patterns/_memory-map.md) |
+| Confusion pairs | [01-patterns/_confusion-pairs.md](01-patterns/_confusion-pairs.md) |
+| Trigger table | [01-patterns/_trigger-table.md](01-patterns/_trigger-table.md) |
+| Boss sheet (PDF) | [resources/LLD_Design Pattern Boss sheet.pdf](resources/LLD_Design%20Pattern%20Boss%20sheet.pdf) |
+| Mistakes log | [03-interview-qa/mistakes-log.md](03-interview-qa/mistakes-log.md) |
+
+## Quick run
+
+```bash
+cd 01-patterns/_01_creational/factory && mkdir -p out
+
+# Notification
+javac -d out notification/common/*.java notification/simplefactory/*.java && java -cp out notification.simplefactory.Main
+javac -d out notification/common/*.java notification/factorymethod/*.java && java -cp out notification.factorymethod.Main
+
+# Cab
+javac -d out cab/common/*.java cab/simplefactory/*.java && java -cp out cab.simplefactory.Main
+javac -d out cab/common/*.java cab/simplefactory/*.java cab/factorymethod/*.java && java -cp out cab.factorymethod.Main
+```
